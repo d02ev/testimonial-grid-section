@@ -1,0 +1,301 @@
+@import url("variables.css");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+/* general tinkering for efficient editing */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--bodyBG);
+  padding: 0;
+  margin: 0;
+  font-family: var(--fontFam);
+}
+
+p.name {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+p.review-normal {
+  margin-bottom: 0;
+}
+
+p.ver-badge {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+/* general tinkering ends */
+
+/* desktop design */
+/* applying grid to all grid containers and setting properties */
+div.upper-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 35px;
+}
+
+main.main-grid {
+  max-width: 1908px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  column-gap: 35px;
+  padding: 30px;
+}
+
+div.lower-section {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 35px;
+}
+/* applying grid ends */
+
+/* basic edits like background, color, fontfamily, border etc. */
+div.upper-left-section {
+  background-image: url("/images/bg-pattern-quotation.svg"),
+    linear-gradient(var(--upperLeftSecBG), var(--upperLeftSecBG));
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right 10%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+div.upper-right-section {
+  background-color: var(--upperRightSecBG);
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+div.lower-left-section {
+  background-color: var(--lowerLeftSecBG);
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+div.lower-right-section {
+  background-color: var(--lowerRightSecBG);
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+section.main-right-section {
+  background-color: var(--mainRightSecBG);
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+/* basic edits ends */
+
+/* manipulation of the review <p> tags */
+p.ver-badge {
+  font-size: 13px;
+}
+
+p.ver-badge-white {
+  color: var(--badgeColWhite);
+}
+
+p.ver-badge-dark {
+  color: var(--badgeColDark);
+}
+
+p.name {
+  font-weight: var(--nameWt);
+}
+
+p.name-white {
+  color: var(--nameColWhite);
+}
+
+p.name-dark {
+  color: var(--nameColDark);
+}
+
+p.review-normal {
+  width: 95%;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+p.review-bold {
+  width: 95%;
+  font-size: 30px;
+  font-weight: var(--reviewBoldWt);
+  text-align: left;
+}
+
+p.review-bold-white {
+  color: var(--reviewBoldWhite);
+}
+
+p.review-normal-white {
+  color: var(--reviewNormalWhite);
+}
+
+p.review-bold-dark {
+  color: var(--reviewBoldDark);
+}
+
+p.review-normal-dark {
+  color: var(--reviewNormalDark);
+}
+/* manipulation of <p> tag ends */
+
+/* manipulation of profile pics */
+div.profile-pic-ul {
+  height: 3rem;
+  width: 3rem;
+  border: 3px solid var(--badgeColWhite);
+  border-radius: 50%;
+  background-image: url("/images/image-daniel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.profile-pic-ur {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-image: url("/images/image-jonathan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.profile-pic-ll {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-image: url("/images/image-jeanette.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.profile-pic-lr {
+  height: 3rem;
+  width: 3rem;
+  border: 3px solid var(--upperLeftSecBG);
+  border-radius: 50%;
+  background-image: url("/images/image-patrick.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.profile-pic-mr {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-image: url("/images/image-kira.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* modification of profile pics ends */
+
+/* modification of upper header (profile details) */
+div.upper-header {
+  width: 17%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.upper-header-small-box {
+  width: 42%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.upper-header-lrs {
+  width: 18.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.upper-header-mrs {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* modification of upper header ends */
+
+/* adding padding to all the sections */
+div.padding {
+  padding: 30px;
+}
+/* padding ends */
+/* desktop design ends */
+
+/* mobile design */
+@media screen and (max-width: 400px) {
+  main.main-grid,
+  div.upper-section,
+  div.lower-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  main.main-grid {
+    padding: 15px;
+  }
+
+  div.upper-header {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.upper-header-small-box {
+    width: 63%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.upper-header-lrs {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.upper-header-mrs {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.padding {
+    padding: 25px;
+  }
+
+  p.review-bold {
+    width: 100%;
+    text-align: left;
+  }
+
+  p.review-normal {
+    width: 100%;
+    text-align: left;
+  }
+
+  div.upper-left-section,
+  div.lower-left-section,
+  div.lower-right-section {
+    margin-bottom: 35px;
+  }
+}
+/* mobile design ends */

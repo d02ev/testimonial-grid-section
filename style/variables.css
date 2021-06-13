@@ -1,0 +1,35 @@
+:root {
+    /* colors */
+    /* background colors */
+    /* body */
+    --bodyBG: hsl(210, 46%, 95%);
+    /* body ends */
+    /* main left section */
+    --upperLeftSecBG: hsl(263, 55%, 52%);
+    --upperRightSecBG: hsl(217, 19%, 35%);
+    --lowerLeftSecBG: hsl(0, 0%, 100%);
+    --lowerRightSecBG: hsl(219, 29%, 14%);
+    /* main left section ends */
+
+    /* main right section */
+    --mainRightSecBG: hsl(0, 0%, 100%);
+    /* main right section ends */
+
+    /* text colors */
+    --nameColWhite: hsl(0, 0%, 100%);
+    --badgeColWhite: hsla(0, 0%, 100%, 0.5);
+    --reviewBoldWhite: hsl(0, 0%, 100%);
+    --reviewNormalWhite: hsla(0, 0%, 100%, 0.7);
+    --nameColDark: hsl(219, 29%, 14%);
+    --badgeColDark: hsla(219, 29%, 14%, 0.5);
+    --reviewBoldDark: hsl(219, 29%, 14%);
+    --reviewNormalDark: hsla(219, 29%, 14%, 0.7);
+    /* text colors end */
+    /* colors end */
+
+    /* typography */
+    --fontFam: 'Barlow Semi Condensed', sans-serif;
+    --nameWt: 500;
+    --reviewBoldWt: 600;
+    /* typography ends */
+}
